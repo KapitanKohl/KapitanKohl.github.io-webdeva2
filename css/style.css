@@ -1,0 +1,177 @@
+*  {text-align:center;box-sizing: border-box;margin:1px;padding: 5px;border: 1px; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif}
+body {
+    background-color: darkslategray;
+    background-image: url("../images/BarbedWireBG.jpg");
+    
+    font-style: italic;
+}
+body * {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+img{width: 100%;height: auto;justify-content: center; align-items: center;} 
+nav ul li{display:block; display:inline-block}
+nav 
+{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #2f4f4f;
+}
+button{
+    font-size:large;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+}
+nav ul
+{
+    width: 60%;
+}
+header{
+    background-color: silver;
+    flex-basis: 100%;
+}
+footer{
+    background-color: silver;
+    flex-basis: 100%
+}
+#quiz
+{
+    align-items:center;
+    justify-content: center;
+}
+#page1{
+    background: silver;
+}
+#page2{
+    background: silver;
+}
+#page3{
+    background: silver;
+}
+#pagecontainer
+{
+    justify-content: center;
+    align-items:  center;
+    flex: 100%;
+}
+#footer
+{
+    min-height: 40vh;
+    font-size: 10px;
+    align-self: flex-end;
+    border:5px solid darkgray;
+    color: whitesmoke;
+    background-color: black;
+    justify-content: center;
+}
+#menuList.menuShow{
+    display: none;
+}
+#hamIcon{display:block; justify-content: center;}
+#sub-con{width: auto;flex-wrap:wrap;}
+.sub-con-image
+{
+    background-color: black;
+    width: 40vb;
+    height: 30vh;
+    padding: 5px;
+    border: 5px black solid;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.sub-con-text
+{
+    font-family:Arial, Helvetica, sans-serif;
+    width: auto;
+    height: auto;
+    padding: 5px ;
+    justify-content: center;
+    align-items:  center;
+    flex-wrap:wrap;
+    flex-direction: column;
+    
+}
+.text-and-image
+{
+    background-color: slategray;
+    display: flex;width: 100%;flex-wrap: wrap;
+}  
+.btn
+{
+    background-color: silver;
+    cursor: pointer;
+}
+.btn:hover{
+    color: darkgray;
+    padding: 15px;
+}
+.choices
+{
+    order: 3;
+}
+.controls
+{
+    order: 4;
+}
+.hide
+{
+    display: none;
+}
+.flex{display: flex;width: 100%;flex-wrap: wrap;flex-basis:100%;}
+.con{padding: 1rem 2rem;width: 100%; height:auto; flex-direction: column;}
+.con2{padding: 1rem 2rem;width: 100%; flex-direction: row;justify-self: center;}
+.page{display: flex;width: 60vb; height:auto; border:5px solid gray; justify-self: center;}
+.footer{width: 60vb; height:20vh; border:2px solid gray; justify-self: center;}
+.headoffoot{flex: 5}
+.score
+{
+    font-size: large;
+    font: normal;
+}
+.content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#user-score
+{
+    color: slategrey;
+}
+#total-score
+{
+    color: black;
+}
+/*for responsive menu*/
+@media screen and (min-width:800px) {
+    /*make a menu items horizontal*/
+    nav ul li {
+        display: inline;
+    }
+    /* hide menu icon */
+    #hamIcon {
+        display: none;
+    }
+    /*unhide the menu item list*/
+    nav ul {
+        display: block;
+    }
+    /*resize pages*/
+    .page
+    {
+        width: 100vb; height: auto;
+    }
+    /*adjusts texts and image*/
+    .sub-con-text
+    {
+        flex: 1;
+    }
+    #menuList.menuShow{
+        display: block;
+    }
+
+}
